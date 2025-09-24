@@ -4,15 +4,16 @@ using namespace std;
 int main() {
     int n;
     int credit;
-    int sumcredit=0;
-    float total;
-    int sum=0;
+    float sumcredit=0;
+    float total=0;
+    float sum=0;
     cin>>n;
-    for (int i=0;i<=n;i++) {
+    for (int i=1;i<=n;i++) {
         cin>>credit>>total;
         sumcredit+=credit;
         sum+=credit*total;
     }
-    cout<< sum/sumcredit << endl;
+    float answer=sum/sumcredit ;
+    cout<<"Your total GPA is "<<answer<<endl;
     return 0;
 }
